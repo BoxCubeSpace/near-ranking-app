@@ -1,0 +1,177 @@
+.home-section {
+  width: 100%;
+  height: auto;
+  /* background: linear-gradient(to bottom right, #5f24ff, #262626, #262626, #5f24ff); */
+  background: radial-gradient(
+      ellipse at top,
+      rgba(109, 54, 54, 0.3) 0%,
+      rgb(255 0 0 / 0%) 70%
+    ),
+    radial-gradient(
+      ellipse at bottom,
+      rgba(255, 48, 72, 0.2) 0%,
+      rgba(0, 0, 0, 0) 70%
+    ),
+    radial-gradient(
+        ellipse at center,
+        rgba(78, 19, 19, 0.5) 0%,
+        rgba(0, 0, 0, 0) 70%
+      )
+      #262626;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 100vh 100vh, 100vh 100vh, 100vh 100vh;
+  background-attachment: fixed;
+  animation: bganimation 30s infinite;
+}
+
+.navbar-toggler{
+  color: #c44d56 !important;
+  border: var(--bs-border-width) solid #c44d56 !important;
+}
+
+.head-distance{
+  padding-top: 8rem;
+}
+
+.logo-bc{
+  width: 7%
+}
+
+.col-1 {
+  flex: 0 0 auto;
+  width: 10.333333%;
+}
+
+@keyframes bganimation {
+  0% {
+    background-position: -100% -100%, 200% 200%, -100% 200%, 200% -100%;
+  }
+  50% {
+    background-position: 150% 100%, -200% 100%, 100% 0%, 0% 100%;
+  }
+  100% {
+    background-position: -100% -100%, 200% 200%, -100% 200%, 200% -100%;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #3c2527;
+  border-radius: 0.25rem; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c44d56; 
+  border-radius: 0.25rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #798fda; 
+}
+
+.img-list-collection{
+  width: 30%;
+}
+.spacer{
+  flex: 0 0 auto;
+  width: 2.333333%;
+}
+.col-1-num{
+  flex: 0 0 auto;
+  width: 5.333333%;
+}
+.col-1-img{
+  flex: 0 0 auto;
+  width: 5.333333%;
+}
+.col-1-img img{
+  height: 100%;
+  width: 100%;
+}
+.col-1-custom{
+  flex: 0 0 auto;
+  width: 10.333333%;
+}
+.col-2-custom{
+  flex: 0 0 auto;
+  width: 10.333333%;
+}
+.col-3-custom{
+  flex: 0 0 auto;
+  width: 25%;
+}
+.col-3-custom-v{
+  flex: 0 0 auto;
+  width: 21.333333%;
+}
+.col-4-custom{
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+
+@media only screen and (max-width: 768px) {
+  .head-distance{
+    padding-top: 8rem;
+  }
+  .logo-bc{
+    width: 15%
+  }
+  .deactive {
+    display: none;
+  }
+  .img-collection{
+    width: 40%;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+  }
+  .col-1-custom{
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  .col-2-custom{
+    flex: 0 0 auto;
+    width: 16.66666667%;
+  }
+  .col-3-custom{
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+  .col-4-custom{
+    flex: 0 0 auto;
+    width: 49.333333%;
+  }
+}
+
+.list-collection {
+  background: #3c2527;
+  padding: 1rem 0;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.scrolled-collection {
+  max-width: unset;
+  height: 55vh;
+  overflow: auto;
+}
+
+.list-collection:hover {
+  color: #c44d56 !important;
+  transition: color 0.5s;
+}
+
+.hr-custom {
+  color: #2fa8e6 !important;
+}
+
+.header-list {
+  padding-top: 5rem;
+}
